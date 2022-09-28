@@ -57,10 +57,11 @@ function Signup() {
             </Button>
           </div>
         </Form>
-      </div>
-      <div className="p-3 box mt-3 text-center">
+        <div className="p-3 box mt-3 text-center">
         Already have an account? <Link to="/">Login</Link>
       </div>
+      </div>
+     
       </div>
     </>
   );

@@ -68,7 +68,7 @@ function Movies() {
   return (
     <div style={{backgroundColor:'#120241'}}>
       <div className="head w-100 d-flex justify-content-between">
-        <h3 style={{textAlign:'left',marginLeft:'5px',marginTop:"10px"}}>Trending Now</h3>
+        <h3 style={{textAlign:'left',marginLeft:'5px',marginTop:"10px"}}>Trending</h3>
         <Search onSubmit={handleSubmit} onChange={(e)=>{setInput(e.target.value)}}  value={input} />
       </div>
      <Carousel

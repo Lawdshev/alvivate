@@ -74,10 +74,11 @@ function Login() {
                 onClick={handleGoogleSignIn}
               />
             </div>
-          </div>
-          <div className="p-3 box mt-3 text-center">
+            <div className="p-3 box mt-3 text-center">
             Don't have an account? <Link to="/Signup">Sign up</Link> 
           </div>
+          </div>
+          
           </div>
         </>
       );
