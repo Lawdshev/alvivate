@@ -19,7 +19,7 @@ function Login() {
     setError('')
      try {
        await logIn(email,password)
-       navigate('/Home/Home/TvShows')
+       navigate('/Home')
      } catch (err) {
       setError(err.message)
      }
