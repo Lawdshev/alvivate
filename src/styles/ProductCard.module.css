@@ -1,0 +1,81 @@
+.none{
+    align-self:center ;
+}
+.single{
+    text-decoration: none;color: #120241; display:flex;justify-content: space-around;width: 100%;background-color: white; border: solid 3px #120241;
+}
+.single:hover{
+    color: white;
+    background-color: #120241;
+}
+.img{
+    width:100%;
+}
+.title{
+    text-decoration: underline;font-size: 30px;
+}
+.p{
+    font-size: 20px 
+}
+.h3{
+    font-size: 20px;
+}
+article{
+    width: 100%;font-size: 15px;
+}
+hr{
+    width:100%
+}
+.btns{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn{
+    padding: 5px 13px ;
+    font-weight: 700;
+    cursor: pointer;
+}
+.delete{
+    background-color: red;
+}
+.update{
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+}
+.texts{
+    padding: 5px;
+}
+
+@media screen and (max-width:800px){
+    .single{
+        flex-direction: column;
+        width: 100%;
+    }
+    .texts{
+        width: 100%;
+        padding: 52;
+    }
+    
+}
+@media screen and (min-width:801px){
+    .pica{
+        width: 28%;
+    }
+    .texts{
+        width: 40%;
+        padding: 2%;
+    }
+}
+@media screen and (min-width:1024px){
+    .pica{
+        width: 30%;
+    }
+    .texts{
+        width: 40%;
+        padding: 2%;
+    }
+}

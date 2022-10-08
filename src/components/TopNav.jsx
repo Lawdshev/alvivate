@@ -8,10 +8,6 @@ function TopNav() {
   return (
     <Navbar expand="lg" style={{background: "#120241"}}> 
       <Container fluid>
-        <div className="logo d-flex" style={{ marginLeft:'10px',fontSize:'30px' }}>
-          <i class="fa-solid fa-v" style={{ color:'white' }}></i>
-          <i class="fa-solid fa-video" style={{ color:'white' }}></i>
-        </div>
         <Navbar.Toggle aria-controls="navbarScroll" style={{backgroundColor:"white"}} />
         <Navbar.Collapse style={{maxHeight: '100vh'}} >
           <Nav

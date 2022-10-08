@@ -11,6 +11,7 @@ import Women from "./Pages/Women";
 import Men from './Pages/Men';
 import Signout from './components/Signout';
 import TopNav from './components/TopNav';
+import ProductDisplay from './Pages/ProductDisplay';
 
 function App() {
   return (<>
@@ -22,6 +23,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Home/>
+                  </ProtectedRoute>
+                }
+              />
+            <Route
+                path="/item/:id"
+                element={
+                  <ProtectedRoute>
+                    <ProductDisplay/>
                   </ProtectedRoute>
                 }
               />

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 *{
   margin:0;
   padding: 0;
@@ -37,13 +40,13 @@
     text-decoration: none;
   }
 
-  h3{
+  /* h3{
     color: white;
     background-color: none;}
 
   p{
     background-color: none;
-  }
+  } */
   /* @media only screen and (max-width:'600px'){
     .nav-collapse{
       height: '80vh',color:"white",display:'flex',alignItems:'center',justifyContent:'space-between',padding:'100px 0'
