@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Blog() {
+function Women() {
   return (
     <div>
-      blog
+      Women
     </div>
   )
 }
-
-export default Blog;
+export default Women;

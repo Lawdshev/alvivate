@@ -16,11 +16,11 @@ function TopNav() {
         <Navbar.Collapse style={{maxHeight: '100vh'}} >
           <Nav
             className="ms-auto nav-collapse">
-            <Nav.Link href="/Home/Home/TvShows" style={{color:"white", alignSelf:'center'}}>Home</Nav.Link>
-            <Nav.Link href="/Profile" style={{color:"white", alignSelf:'center' }}>Profile</Nav.Link>
-            <Nav.Link href="/WatchList" style={{color:"white", alignSelf:'center' }}>Watch List</Nav.Link>
-            <Nav.Link href="/Blog" style={{color:"white", alignSelf:'center' }} >Blog</Nav.Link>
-            <Nav.Link href="/Signout" style={{color:"white", alignSelf:'center' }}>Sign out</Nav.Link>   
+            <Nav.Link href="/Home" style={{color:"white", alignSelf:'center'}}>Home</Nav.Link>
+            <Nav.Link href="/Men" style={{color:"white", alignSelf:'center' }}>Men</Nav.Link>
+            <Nav.Link href="/Women" style={{color:"white", alignSelf:'center' }}>Women</Nav.Link>
+            <Nav.Link href="/Dashboard" style={{color:"white", alignSelf:'center' }} >Dashboard</Nav.Link>
+            <Nav.Link href="/Signout" style={{color:"white", alignSelf:'center' }}>Logout</Nav.Link>   
           </Nav>
         </Navbar.Collapse>
       </Container>

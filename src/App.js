@@ -5,17 +5,12 @@ import React from "react";
 import {Routes,Route} from 'react-router-dom';
 import { UserAuthContextProvider } from './utilities/UserAuthContextProvider';
 import Home from './Pages/Home';
-import Profile from './Pages/Profile';
+import Dashboard from './Pages/Dashboard';
 import ProtectedRoute from './utilities/ProtectedRoute';
-import Blog from "./Pages/Blog";
-import WatchList from './Pages/WatchList';
+import Women from "./Pages/Women";
+import Men from './Pages/Men';
 import Signout from './components/Signout';
 import TopNav from './components/TopNav';
-import TvShows from './Home Components/TvShows';
-import Movies from './Home Components/Movies';
-import Anime from './Home Components/Anime';
-// import "~slick-carousel/slick/slick.css"; 
-// import "~slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (<>
@@ -29,53 +24,28 @@ function App() {
                     <Home/>
                   </ProtectedRoute>
                 }
-              >
-                <Route
-                path="Home/Tvshows"
+              />
+            <Route
+                path="/Dashboard"
                 element={
                   <ProtectedRoute>
-                    <TvShows/>
+                    <Dashboard/>
                   </ProtectedRoute>
                 }
               />
             <Route
-                path="Home/Movies"
+                path="/Men"
                 element={
                   <ProtectedRoute>
-                    <Movies/>
+                    <Men/>
                   </ProtectedRoute>
                 }
               />
             <Route
-                path="Home/Anime"
+                path="/Women"
                 element={
                   <ProtectedRoute>
-                    <Anime/>
-                  </ProtectedRoute>
-                }
-              />
-              </Route>
-            <Route
-                path="/Profile"
-                element={
-                  <ProtectedRoute>
-                    <Profile/>
-                  </ProtectedRoute>
-                }
-              />
-            <Route
-                path="/WatchList"
-                element={
-                  <ProtectedRoute>
-                    <WatchList/>
-                  </ProtectedRoute>
-                }
-              />
-            <Route
-                path="/Blog"
-                element={
-                  <ProtectedRoute>
-                    <Blog/>
+                    <Women/>
                   </ProtectedRoute>
                 }
               />
