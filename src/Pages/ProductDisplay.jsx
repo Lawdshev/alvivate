@@ -21,9 +21,8 @@ function ProductDisplay() {
           <p>{product.description}</p>
         </article>
       </div>
-      <div className={productStyle.prodSelection}>
-         <h3 className={productStyle.prodPrice}>Price: ${product.price}</h3>
-         <hr/>
+      <div className={productStyle.prodSelection}>  
+         
          <div className={productStyle.selectDiv}>
           <h3 className={productStyle.qty}>Qty:</h3>
           <select className={productStyle.select}>
@@ -34,6 +33,8 @@ function ProductDisplay() {
               <option value="4">4</option>
           </select>
          </div>
+         <hr/>
+         <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
          <hr />
          <button className={productStyle.cartBtn}>Add to cart</button>
          <hr />
