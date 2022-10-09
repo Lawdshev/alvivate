@@ -39,9 +39,8 @@ function ProductDisplay() {
          <hr />
          <button className={productStyle.cartBtn} onClick={()=> navigate('/cart')}>Add to cart</button>
          <hr />
-         <button className={productStyle.discountBtn} onClick={()=> navigate('/Promo')}>Enjoy 70% discount</button>
+         <button className={productStyle.discountBtn} onClick={()=> navigate(`/Promo/${id}`)}>Enjoy 70% discount</button>
       </div> 
-
     </div>
   </>
     
