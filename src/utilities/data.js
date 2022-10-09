@@ -4,7 +4,8 @@ export const womenCollection = [
         image_url : 'https://s.alicdn.com/@sc04/kf/H06f552c9f9844e40bac620f4c4f7f0c2i.jpg_300x300.jpg',
         description : 'New Arrivals Cheap Fashion Women"s Casual Shoes Girl Ladies Flat Shoes',
         product_name: 'sneakers',
-        price : '135.98'
+        price : '135.98',
+        status:'Status: In stock'
     },
     {
         id : 2,
@@ -12,6 +13,7 @@ export const womenCollection = [
         description : '2022 Summer Women shining Sneakers New Casual Flat Ladies Vulcanized Shoes Breathable Lace Up',
         price : '150.01',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 3,
@@ -19,6 +21,7 @@ export const womenCollection = [
         description : 'Wenzhou Factory New Arrivals Printed Mesh Women Slip On Flats Walking Style Women"S Flat Shoes',
         price : '200.00',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 4,
@@ -26,6 +29,7 @@ export const womenCollection = [
         description : 'New Arrival High Quality Fashion Jogging Hot Selling Outdoor Custom Logo Flat Runner for sport ladies',
         price : '345.00',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 5,
@@ -33,6 +37,7 @@ export const womenCollection = [
         description : 'New Woman Pumps Nightclub Party Wedding Shoes Gold Metal Stiletto New Designer',
         price : '135.90',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 6,
@@ -40,6 +45,7 @@ export const womenCollection = [
         description : '2022 Summer New Women"s Jelly Shoes Fashion Flat Shoes Ladies Soft PVC Rubber Slippers',
         price : '350.09',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 7,
@@ -47,6 +53,7 @@ export const womenCollection = [
         description : 'Women Pumps High Heels Shoes Pointed Toe Female Shoes Serpentine Woman Sexy Mules',
         price : '100.50',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 8,
@@ -54,6 +61,7 @@ export const womenCollection = [
         description : 'Point-toe Women Flats Snake Pattern Plaid Square Buckle Soft Sole Work Office Flat Shoes',
         price : '198.00',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 9,
@@ -61,6 +69,7 @@ export const womenCollection = [
         description : 'Women"s flat sexy pearl women"s shoes formal dress dating comfortable Ladies casual Shoes',
         price : '111.01',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 10,
@@ -68,6 +77,7 @@ export const womenCollection = [
         description : 'Spot ladies new clear crystal heels with open toe PU leather shoes high heels shoes',
         price : '35.30',
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
 ]
 
@@ -87,6 +97,7 @@ export const menCollection = [
         price : '200.30',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 13,
@@ -95,6 +106,7 @@ export const menCollection = [
         price : '150.30',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 14,
@@ -103,6 +115,7 @@ export const menCollection = [
         price : '150.30',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 15,
@@ -111,6 +124,7 @@ export const menCollection = [
         price : '100.00',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 16,
@@ -119,6 +133,7 @@ export const menCollection = [
         price : '120.00',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 17,
@@ -127,6 +142,7 @@ export const menCollection = [
         price : '160.00',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 18,
@@ -135,6 +151,7 @@ export const menCollection = [
         price : '202.09',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 19,
@@ -143,6 +160,7 @@ export const menCollection = [
         price : '100.30',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
     {
         id : 20,
@@ -151,5 +169,6 @@ export const menCollection = [
         price : '75.30',
         rating: 4.5,
         product_name: 'sneakers',
+        status:'Status: In stock'
     },
 ]
