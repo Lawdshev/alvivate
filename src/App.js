@@ -54,7 +54,7 @@ function App() {
                 }
               />
             <Route
-                path="/Promo"
+                path="/Promo/:id"
                 element={
                   <ProtectedRoute>
                     <Promo/>
