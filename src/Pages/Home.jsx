@@ -1,21 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
-import SliderComp from '../components/Slider';
-import { menCollection } from '../utilities/data';
+import { inStore } from '../utilities/data';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate()
  
   return (
     <>
     <div>
-      <SliderComp/>
+      <div className="text-white flex flex-col items-center justify-around py-14" style={{backgroundColor:'#120241',minHeight:'40vh'}}>
+        <div className="text-white flex flex-col items-center">
+          <h1 className="text-3xl">WELCOME TO APPLE</h1>
+          <h4 className="text-white text-lg italic">The home of unbeatable Fashion</h4>
+        </div> 
+        <div className="btns flex items-center justify-around w-80 px-4">
+          <Button onClick={() => {
+          navigate("/Men")}}>SHOP NOW</Button>
+        </div>
+      </div>
       <div className="flex justify-between items-center px-4 mt-2">
         <h6 style={{color:'#120241'}} className="text-center font-extrabold">POPULAR IN STORE</h6>
       </div>
       <div className='px-3'>
       {
-          menCollection.map((item,idx)=>{
+          inStore.map((item,idx)=>{
             return <ProductCard id={idx} key={item.id} {...item}/>
           })
         }

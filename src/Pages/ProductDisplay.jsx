@@ -39,10 +39,10 @@ function ProductDisplay() {
          <hr />
          <button className={productStyle.discountBtn}>Enjoy 70% discount</button>
       </div> 
+
     </div>
   </>
     
   );
 }
-
 export default ProductDisplay;
