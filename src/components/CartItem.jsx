@@ -4,7 +4,7 @@ import Counter from './Counter';
 
 function CartItem({product_name,description,image_url}) {
   return (
-    <Card style={{ width: '18rem',marginTop:'2%' }}>
+    <Card style={{ width: '18rem',marginTop:'1%'}}>
       <Card.Img variant="top" src={image_url} />
       <Card.Body>
         <Card.Title>{product_name}</Card.Title>

@@ -14,6 +14,7 @@ import Signout from './components/Signout';
 import TopNav from './components/TopNav';
 import ProductDisplay from './Pages/ProductDisplay';
 import Footer from './components/Footer';
+import Promo from './Pages/Promo';
 
 function App() {
   return (<>
@@ -49,6 +50,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Dashboard/>
+                  </ProtectedRoute>
+                }
+              />
+            <Route
+                path="/Promo"
+                element={
+                  <ProtectedRoute>
+                    <Promo/>
                   </ProtectedRoute>
                 }
               />

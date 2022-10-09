@@ -1,14 +1,15 @@
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { menCollection, womenCollection } from "../utilities/data";
 import productStyle from '../styles/productDisplay.module.css';
 
 function ProductDisplay() {
+  const navigate = useNavigate()
   const { id } = useParams();
   const allProducts = menCollection.concat(womenCollection);
   const product = allProducts.find(c => c.id == id)
   return (
   <>
-    <div className={productStyle.prodDisplay}>
+    <div className={productStyle.prodDisplay} >
       <div className={productStyle.imgDiv}>
       <img src={product.image_url} alt={product.product_name} className={productStyle.img}/>
       </div>
@@ -36,9 +37,9 @@ function ProductDisplay() {
          <hr/>
          <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
          <hr />
-         <button className={productStyle.cartBtn}>Add to cart</button>
+         <button className={productStyle.cartBtn} onClick={()=> navigate('/cart')}>Add to cart</button>
          <hr />
-         <button className={productStyle.discountBtn}>Enjoy 70% discount</button>
+         <button className={productStyle.discountBtn} onClick={()=> navigate('/Promo')}>Enjoy 70% discount</button>
       </div> 
 
     </div>
