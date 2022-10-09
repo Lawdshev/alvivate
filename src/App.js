@@ -5,6 +5,7 @@ import React from "react";
 import {Routes,Route} from 'react-router-dom';
 import { UserAuthContextProvider } from './utilities/UserAuthContextProvider';
 import Home from './Pages/Home';
+import Cart from './Pages/Cart';
 import Dashboard from './Pages/Dashboard';
 import ProtectedRoute from './utilities/ProtectedRoute';
 import Women from "./Pages/Women";
@@ -12,6 +13,7 @@ import Men from './Pages/Men';
 import Signout from './components/Signout';
 import TopNav from './components/TopNav';
 import ProductDisplay from './Pages/ProductDisplay';
+import Footer from './components/Footer';
 
 function App() {
   return (<>
@@ -27,10 +29,18 @@ function App() {
                 }
               />
             <Route
-                path="/item/:id"
+                path="/product/:id"
                 element={
                   <ProtectedRoute>
                     <ProductDisplay/>
+                  </ProtectedRoute>
+                }
+              />
+            <Route
+                path="/cart"
+                element={
+                  <ProtectedRoute>
+                    <Cart/>
                   </ProtectedRoute>
                 }
               />
@@ -71,10 +81,8 @@ function App() {
             <Route path="/Signup" element={<Signup/>}/>
           </Routes>
         </UserAuthContextProvider>
-    
+        <Footer/>
     </>
   );
 }
-
-
 export default App;

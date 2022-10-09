@@ -1,23 +1,18 @@
 import { useParams } from "react-router-dom";
-import { menCollection } from "../utilities/data";
+import { menCollection, womenCollection } from "../utilities/data";
 
 function ProductDisplay() {
   const { id } = useParams();
-  const product = menCollection.find((c)=>c.id === id);
+  const allProducts = menCollection.concat(womenCollection);
+  const product = allProducts.find(c=>c.id == id);
+  console.log(product);
 
   return (<>
     <div className="proj-desc">
-      <div className="product" >
-        <h1> {product.product_name}</h1>
-        <img src={product.image_url} alt="product"/>
-      </div>
-      <article >
-        <p className="description">{product.description}</p>
-      </article>
+        {product.product_name}
     </div>
     </>
     
   );
 }
-
 export default ProductDisplay;

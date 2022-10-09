@@ -10,7 +10,7 @@ export default function ProductCard({product_name,image_url,description,price,ra
     return (
         <Card className='cardcomp w-90' style={{marginTop:'5px',marginLeft:'5px'}}>
           <a class={productStyle.single}  onClick={() => {
-        navigate("/item/" + id);
+        navigate("/product/" + id);
       }}>
                         <div class={productStyle.pica}>
                             <img src={image_url} alt="" class={productStyle.img}/>
