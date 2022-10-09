@@ -12,18 +12,18 @@ function Promo() {
         <div className={productStyle.imgDiv}>
           <img src={product.image_url} className={productStyle.img}/>
         </div>
-        <div className='discountDiv flex flex-col ml-8 items-center'>
-          <div className='rulesDiv flex flex-col'>
-             <h3 className='rulesHeading self-center'>Rules:</h3>
-             <p className='rules text-center'>Invite 9 of your friends and families to buy this same product and get 70% off or join an existing group of people buying the same product</p>
+        <div className={productStyle.discountDiv}>
+          <div className={productStyle.rulesDiv}>
+             <h3 className={productStyle.rulesHeading}>Rule</h3>
+             <p className={productStyle.rules}>Invite 9 of your friends and families to buy and get 70% off or join an existing group of people buying the same product</p>
           </div>
-          <div className='referralDiv w-3/4 px-10 flex items-center justify-around'>
-            <input value='Your refferal link' className='px-16 py-1 border-solid border-black border-2'readOnly/>
-            <button className='bg-blue-700 px-4 py-1'>Copy</button>
+          <div className={productStyle.referralDiv}>
+            <input value='Your refferal link' className={productStyle.referral}readOnly/>
+            <button className={productStyle.copy}>Copy</button>
           </div>
           <h1 className='or mt-2 text-sm'>OR</h1>
-          <div className='mt-2'>
-             <button className='bg-orange-500 px-8 py-2'>Click to join existing group</button>
+          <div className={productStyle.existingGroupButtonDiv}>
+            <button className={productStyle.existingGroupButton}>Click to join existing group</button>
           </div>
         </div>
     </div>
