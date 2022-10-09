@@ -60,13 +60,14 @@
 
 .selectDiv{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0.5rem 4rem;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .qty{
     font-size: 1.5rem;
+    margin-top: 5px;
     line-height: 1rem;
     color: #120241;
 }

@@ -22,16 +22,14 @@ function ProductDisplay() {
           <p>{product.description}</p>
         </article>
       </div>
-      <div className={productStyle.prodSelection}>  
-         
+      <div className={productStyle.prodSelection}>     
          <div className={productStyle.selectDiv}>
-          <h3 className={productStyle.qty}>Qty:</h3>
+          <p className={productStyle.qty}>Color:</p>
           <select className={productStyle.select}>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
+              <option value="red">red</option>
+              <option value="blue">blue</option>
+              <option value="white">white</option>
+              <option value="black">black</option>
           </select>
          </div>
          <hr/>
