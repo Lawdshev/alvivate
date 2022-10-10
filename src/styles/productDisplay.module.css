@@ -114,6 +114,7 @@
 .rulesDiv {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .rulesHeading{
@@ -237,6 +238,13 @@
    .discountBtn{
      padding: 1rem 6rem;  
    }
+   .discountDiv{
+    margin-top: 2%;
+    width: 100%;
+    }
+    .referralLabel{
+        width: 25%;
+    }
 }
 
 
