@@ -1,12 +1,22 @@
 import { useParams,useNavigate } from "react-router-dom";
 import { menCollection, womenCollection } from "../utilities/data";
 import productStyle from '../styles/productDisplay.module.css';
+import { useProductContext } from "../utilities/ProductsContext";
 
 function ProductDisplay() {
   const navigate = useNavigate()
+  const {cart,setCart} = useProductContext();
   const { id } = useParams();
   const allProducts = menCollection.concat(womenCollection);
   const product = allProducts.find(c => c.id == id)
+  
+  const addToCart = () => {
+    if(cart.includes(product,0)){
+      return;
+    }
+    setCart(prevState=> [...prevState,product])
+  }
+
   return (
   <>
     <div className={productStyle.prodDisplay} >
@@ -35,7 +45,7 @@ function ProductDisplay() {
          <hr/>
          <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
          <hr />
-         <button className={productStyle.cartBtn} onClick={()=> navigate('/cart')}>Add to cart</button>
+         <button className={productStyle.cartBtn} onClick={addToCart}>Add to cart</button>
          <hr />
          <button className={productStyle.discountBtn} onClick={()=> navigate(`/Promo/${id}`)}>Enjoy 70% discount</button>
       </div> 

@@ -3,8 +3,10 @@ import ProductCard from '../components/ProductCard';
 import { inStore } from '../utilities/data';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
+import { useProductContext } from "../utilities/ProductsContext";
 
 function Home() {
+  const {cart,setCart} = useProductContext();
   const navigate = useNavigate()
  
   return (
