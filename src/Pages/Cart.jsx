@@ -12,7 +12,7 @@ const Cart = () => {
         <div className="flex items-center w-screen mx-auto flex-col">
             {cart.length === 0?
             <div className="flex flex-col items-center justify-center w-screen " style={{minHeight:"70vh"}}>
-                <p className='mx-auto text-3xl italic' style={{color:'#120241'}}>You have no items here!</p>
+                <p className='mx-auto text-3xl italic' style={{color:'#120241'}}>You have no item here!</p>
                 <a href="/Home" className="px-3 py-2 bg-blue-600 text-white no-underline">Shop Now</a>
             </div>
             :

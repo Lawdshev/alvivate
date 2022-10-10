@@ -1,18 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Counter from './Counter';
-import { menCollection,womenCollection } from '../utilities/data';
 import { useProductContext } from '../utilities/ProductsContext';
 
 function CartItem({product_name,description,image_url,id}) {
   const {cart,setCart} = useProductContext();
-  const allProducts = menCollection.concat(womenCollection);
-  
   const removeFromCart = () => {
-    const product = allProducts.find(c => c.id === id);
-    const index = allProducts.indexOf(product)
-    console.log(product)
-      setCart(prevState=> prevState.splice(index,1))
+    const items = cart.filter((item)=>{ return item.id !== id})
+    setCart(items)
   }
   return (
     <Card style={{ width: '18rem',marginTop:'1%'}}>
@@ -31,5 +26,4 @@ function CartItem({product_name,description,image_url,id}) {
     </Card>
   );
 }
-
 export default CartItem;
