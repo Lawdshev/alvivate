@@ -15,6 +15,7 @@ import TopNav from './components/TopNav';
 import ProductDisplay from './Pages/ProductDisplay';
 import Footer from './components/Footer';
 import Promo from './Pages/Promo';
+import Groups from './Pages/Groups';
 import { ProductsContextProvider } from './utilities/ProductsContext';
 
 function App() {
@@ -36,6 +37,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <ProductDisplay/>
+                  </ProtectedRoute>
+                }
+              />
+            <Route
+                path="/Promo/:id/Groups"
+                element={
+                  <ProtectedRoute>
+                    <Groups/>
                   </ProtectedRoute>
                 }
               />

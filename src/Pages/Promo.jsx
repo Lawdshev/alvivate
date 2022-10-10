@@ -8,7 +8,9 @@ function Promo() {
   const {user} = useUserAuth();
   const { id } = useParams();
   const allProducts = menCollection.concat(womenCollection);
-  const product = allProducts.find(c => c.id == id)
+  const product = allProducts.find(c => c.id == id);
+  const navigate = useNavigate();
+
   return (
     <div className={productStyle.prodDisplay}>
         <div className={productStyle.imgDiv}>
@@ -26,7 +28,8 @@ function Promo() {
           </div>
           <h1 className='or mt-2 text-sm'>OR</h1>
           <div className={productStyle.existingGroupButtonDiv}>
-            <button className={productStyle.existingGroupButton}>Click to join existing group</button>
+            <button className={productStyle.existingGroupButton} onClick={() => {
+          navigate(`/Promo/${id}/Groups`)}}>Click to join existing group</button>
           </div>
         </div>
     </div>

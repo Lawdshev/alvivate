@@ -6,8 +6,7 @@ const Cart = () => {
   const {cart} = useProductContext();
 
   return (
-    <>
-        
+    <> 
         <h6 className='mt-1 ml-3 font-bold' style={{color:'#120241'}}>SHOPPING CART</h6>
         <div className="flex items-center w-screen mx-auto flex-col">
             {cart.length === 0?
