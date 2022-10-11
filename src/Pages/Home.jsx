@@ -3,10 +3,10 @@ import ProductCard from '../components/ProductCard';
 import { inStore } from '../utilities/data';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
-import { useProductContext } from "../utilities/ProductsContext";
+import { useUserAuth } from '../utilities/UserAuthContextProvider';
 
 function Home() {
-  const {cart,setCart} = useProductContext();
+  const {cart,setCart} = useUserAuth();
   const navigate = useNavigate()
  
   return (

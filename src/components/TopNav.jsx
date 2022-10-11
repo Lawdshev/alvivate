@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate,Link } from "react-router-dom";
-import { useProductContext } from "../utilities/ProductsContext";
+import { useUserAuth } from '../utilities/UserAuthContextProvider';
 
 function TopNav() {
-  const {cart} = useProductContext();
+  const {cart} = useUserAuth();
   const navigate = useNavigate()
 
   return (

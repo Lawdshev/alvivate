@@ -1,10 +1,19 @@
-import CartItem from "../components/CartItem";
+import React,{useState,useEffect} from 'react';
+import {CartItem} from "../components/CartItem";
 import Button from "react-bootstrap/esm/Button";
-import { useProductContext } from "../utilities/ProductsContext";
+import { useUserAuth } from '../utilities/UserAuthContextProvider';
 
 const Cart = () => {
-  const {cart} = useProductContext();
-
+  const {cart} = useUserAuth();
+  const [newprice, setNewprice] = useState(0);
+  useEffect(() => {
+    let ans = 0;
+    cart.map((item) => (ans += item.qty * item.price));
+    setNewprice(ans);
+  }, [])
+  
+    
+  
   return (
     <> 
         <h6 className='mt-1 ml-3 font-bold' style={{color:'#120241'}}>SHOPPING CART</h6>
@@ -18,14 +27,16 @@ const Cart = () => {
             <div className='w-100 flex flex-col items-center md:flex-row justify-around flex-wrap' >
                 {
                     cart.map((item)=>{
-                      return <CartItem {...item}/>
-                         
+                      return <CartItem {...item}/>    
                     })
                 }
             </div>}
             <hr />
-            <div className="checkout flex w-3/5 justify-between">
-              <span className="text-lg font-bold">Total:$<span className="border-solid border-2 px-3 py-2">2,500</span> </span>
+            <div className="checkout flex w-4/5 md:w-3/5 justify-between">
+              <span className="text-lg font-bold">Total:$<span className="border-solid border-2 px-3 py-2">
+                {}
+                {cart.length>0? cart.reduce((total) => newprice + total, 0) : 0 }
+                </span> </span>
               <Button>Checkout</Button>
             </div>
         </div>
