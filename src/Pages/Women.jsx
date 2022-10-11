@@ -17,7 +17,6 @@ function Women() {
           navigate("/Women")}}>SHOP MEN WEARS</Button>
         </div>
       </div>
-      <div><button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button></div>
       <div className="flex justify-between items-center px-4 mt-2">
         <h6 style={{color:'#120241'}} className="text-center font-extrabold">WOMEN FASHION</h6>
       </div>
