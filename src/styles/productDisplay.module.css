@@ -60,15 +60,14 @@
 
 .selectDiv{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
 }
 
 .qty{
     font-size: 1.5rem;
-    margin-top: 5px;
-    line-height: 1rem;
+    margin-top: 10px;
     color: #120241;
 }
 
@@ -180,6 +179,7 @@
         display: flex;
         flex-direction: column;
         padding:0 8rem;
+        min-height: 80vh;
        }
     
        .imgDiv{
@@ -262,14 +262,14 @@
         width: 25%;
         height: 100%;
     }
-
     .referral{
         width: 62% ;
     }
-
     .copy{
         height: 100%;
         width: 13%;
+        font-size: 12px;
+        padding: 9.4px 0;
     }
 }
 

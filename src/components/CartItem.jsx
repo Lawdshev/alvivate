@@ -4,24 +4,9 @@ import { useUserAuth } from '../utilities/UserAuthContextProvider';
 
 export const CartItem= ({product_name,description,image_url,id,price,color,qty}) => {
   const {cart,setCart} = useUserAuth();
-  var [qtty,setQtty] = useState(qty);
-  
-
   const removeFromCart = () => {
     const items = cart.filter((item)=>{ return item.id !== id})
     setCart(items)
-  }
-  const countplus = (e) =>{
-    e.preventDefault();
-      setQtty(()=> qtty++ )
-  }
-  const countminus = (e) =>{
-    e.preventDefault();
-   if(qtty === 1){
-      setQtty(1)
-   }else{
-      setQtty(()=> qtty--)
-   }
   }
 
   return (
@@ -39,7 +24,7 @@ export const CartItem= ({product_name,description,image_url,id,price,color,qty})
         </Card.Text>
         <Card.Subtitle className='flex justify-between items-center'>
           <div className="flex font-bold i justify-around w-2/5 "  style={{color:'#120241'}}>
-            <button onClick={countminus}>-</button>  Qty: X{qty} <button onClick={countplus}>+</button>
+           Qty: X{qty}
           </div>
             <button onClick={removeFromCart}><i className="fa-solid fa-trash-can"></i></button>
         </Card.Subtitle>

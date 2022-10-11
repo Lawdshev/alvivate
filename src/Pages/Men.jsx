@@ -18,7 +18,7 @@ function Men() {
         </div>
       </div>
       <div className="flex justify-between items-center px-4 mt-2">
-        <h6 style={{color:'#120241'}} className="text-center font-extrabold">POPULAR IN STORE</h6>
+        <h6 style={{color:'#120241'}} className="text-center font-extrabold">MEN FASHION</h6>
       </div>
       <div className='px-3'>
       {

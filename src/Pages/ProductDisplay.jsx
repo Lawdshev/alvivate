@@ -54,13 +54,9 @@ function ProductDisplay() {
           </select>
          </div>
          <div className={productStyle.selectDiv} style={{marginTop:'1%'}}>
-          <p className={productStyle.qty}>Qty:</p>
-          <select className={productStyle.select} value={select2} onChange={handleSelect2}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-          </select>
+          
+          <label htmlFor="select2" className="text-xl" >Qty:</label>
+          <input type="number" name="select2" id="" min='1' max='10' value={select2} className="w-20 p-2 border-2 border-solid border-black" onChange={handleSelect2} />
          </div>
          <hr/>
          <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
