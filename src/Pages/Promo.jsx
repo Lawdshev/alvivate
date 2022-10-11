@@ -34,7 +34,7 @@ function Promo() {
              <p className={productStyle.rules}>Invite 9 of your friends and families to buy and get 70% off or join an existing group of people buying the same product</p>
           </div>
           <div className={productStyle.referralDiv}>
-            <label htmlFor="Referral link" className={productStyle.referralLabel}>Referral Link</label>
+            <label htmlFor="Referral link" className={productStyle.referralLabel}>Link</label>
             <input value={referralLink} className={productStyle.referral} readOnly/>
             <button className={productStyle.copy} onClick={handleCopy}>{copy}</button>
           </div>
