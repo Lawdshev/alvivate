@@ -26,7 +26,7 @@ export const CartItem= ({product_name,description,image_url,id,price,color,qty})
           <div className="flex font-bold i justify-around w-2/5 "  style={{color:'#120241'}}>
            Qty: X{qty}
           </div>
-            <button onClick={removeFromCart}><i className="fa-solid fa-trash-can"></i></button>
+            <button onClick={removeFromCart} ><i className="fa-solid fa-trash-can"></i></button>
         </Card.Subtitle>
       </Card.Body>
     </Card>
