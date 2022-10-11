@@ -24,6 +24,8 @@ function Promo() {
   }
 
   return (
+    <>
+    <div><button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button></div>
     <div className={productStyle.prodDisplay} style={{minHeight:'80vh'}}>
         <div className={productStyle.imgDiv}>
           <img src={product.image_url} className={productStyle.img}/>
@@ -45,6 +47,7 @@ function Promo() {
           </div>
         </div>
     </div>
+    </>  
   )
 }
 

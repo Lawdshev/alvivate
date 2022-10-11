@@ -10,6 +10,7 @@ const Cart = () => {
   return (
     <> 
         <h6 className='mt-1 ml-3 font-bold' style={{color:'#120241'}}>SHOPPING CART</h6>
+        <div><button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button></div>
         <div className="flex items-center w-screen mx-auto flex-col">
             {cart.length === 0?
             <div className="flex flex-col items-center justify-center w-screen " style={{minHeight:"70vh"}}>

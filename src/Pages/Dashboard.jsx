@@ -7,7 +7,7 @@ function Dashboard() {
     <div className="flex flex-col lg:flex-row w-screen px-10 justify-around lg:mt-2 " style={{minHeight:'100vh',color:'#120241'}}>
       <div className="flex flex-col text-center mt-2">
         <div className="avatar flex flex-col">
-        <i class="fa-solid fa-user-tie text-5xl"></i>
+        <i className="fa-solid fa-user-tie text-5xl"></i>
         {user.email}
         <p> Referal Link:</p>
         <p className=" break-words">www.apple.com/{user.uid}</p>
