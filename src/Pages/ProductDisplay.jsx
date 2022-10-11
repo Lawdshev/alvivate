@@ -11,7 +11,9 @@ function ProductDisplay() {
   const allProducts = menCollection.concat(womenCollection);
   const product = allProducts.find(c => c.id == id);
   const [select,setSelect] = useState('red')
-  const [select2,setSelect2] = useState('1')
+  const [select2,setSelect2] = useState('1');
+
+
   const handleSelect = (e) => {
     setSelect(e.target.value)
   }
@@ -30,6 +32,7 @@ function ProductDisplay() {
 
   return (
   <>
+    <div><button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button></div>
     <div className={productStyle.prodDisplay} >
       <button>back</button>
       <div className={productStyle.imgDiv}>
