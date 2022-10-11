@@ -16,12 +16,10 @@ import ProductDisplay from './Pages/ProductDisplay';
 import Footer from './components/Footer';
 import Promo from './Pages/Promo';
 import Groups from './Pages/Groups';
-import { ProductsContextProvider } from './utilities/ProductsContext';
 
 function App() {
   return (<>
         <UserAuthContextProvider>
-          <ProductsContextProvider>
           <TopNav/>
           <Routes>
             <Route
@@ -101,9 +99,7 @@ function App() {
             <Route path="/Signup" element={<Signup/>}/>
           </Routes>
             <Footer/>
-          </ProductsContextProvider>
-        </UserAuthContextProvider>
-        
+        </UserAuthContextProvider>    
     </>
   );
 }

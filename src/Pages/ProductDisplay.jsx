@@ -1,19 +1,30 @@
+import React,{useState} from 'react';
 import { useParams,useNavigate } from "react-router-dom";
 import { menCollection, womenCollection } from "../utilities/data";
 import productStyle from '../styles/productDisplay.module.css';
-import { useProductContext } from "../utilities/ProductsContext";
+import { useUserAuth } from '../utilities/UserAuthContextProvider';
 
 function ProductDisplay() {
   const navigate = useNavigate()
-  const {cart,setCart} = useProductContext();
+  const {cart,setCart} = useUserAuth();
   const { id } = useParams();
   const allProducts = menCollection.concat(womenCollection);
-  const product = allProducts.find(c => c.id == id)
+  const product = allProducts.find(c => c.id == id);
+  const [select,setSelect] = useState('red')
+  const [select2,setSelect2] = useState('1')
+  const handleSelect = (e) => {
+    setSelect(e.target.value)
+  }
+  const handleSelect2 = (e) => {
+    setSelect2(e.target.value)
+  }
   
   const addToCart = () => {
     if(cart.includes(product,0)){
       return;
     }
+    product.color = select;
+    product.qty = select2;
     setCart(prevState=> [...prevState,product])
   }
 
@@ -35,11 +46,20 @@ function ProductDisplay() {
       <div className={productStyle.prodSelection}>     
          <div className={productStyle.selectDiv}>
           <p className={productStyle.qty}>Color:</p>
-          <select className={productStyle.select}>
+          <select className={productStyle.select} value={select} onChange={handleSelect}>
               <option value="red">red</option>
               <option value="blue">blue</option>
               <option value="white">white</option>
               <option value="black">black</option>
+          </select>
+         </div>
+         <div className={productStyle.selectDiv} style={{marginTop:'1%'}}>
+          <p className={productStyle.qty}>Qty:</p>
+          <select className={productStyle.select} value={select2} onChange={handleSelect2}>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
           </select>
          </div>
          <hr/>
