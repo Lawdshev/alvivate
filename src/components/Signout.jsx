@@ -4,7 +4,6 @@ import {useNavigate} from "react-router-dom";
 import Button from 'react-bootstrap/esm/Button';
 
 function Signout() {
-  const {user} = useUserAuth();
   const {logOut} = useUserAuth();
   const navigate = useNavigate();
 
@@ -18,16 +17,13 @@ function Signout() {
   };
   return (
     <>
-     <div className="formbody">
-      <div className="p-4 box mt-3 text-center">
+     <div className="flex justify-center flex-col " style={{height: '82vh'}}>
+      <div className=" text-center text-xl italic">
        We hate to see you go
       </div>
-      <div className="p-3 px-5 box mt-3 text-center" onClick={handleLogout}>
-        Log out
-      </div>
+      <Button onClick={handleLogout} className="w-2/6 lg:w-1/4 self-center">Log out</Button>
       </div>
     </>
   );
 }
-
 export default Signout;
