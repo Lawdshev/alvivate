@@ -205,6 +205,16 @@
        .discountBtn{
          padding: 1rem 6rem;  
        }
+
+       /* promo page */
+
+       .rulesDiv{
+        width: 60vw;
+       }
+
+       .referralDiv{
+        width: 60vw;
+    }
  } 
 
 @media screen and (max-width:800px) {
@@ -242,8 +252,22 @@
     margin-top: 2%;
     width: 100%;
     }
+     .rulesDiv{
+        width: 90vw;
+     }
+    .referralDiv{
+        width:90vw;
+    }
     .referralLabel{
         width: 25%;
+        height: 100%;
+    }
+    .referral{
+        width: 62% ;
+    }
+    .copy{
+        height: 100%;
+        width: 13%;
         font-size: 12px;
         padding: 9.4px 0;
     }
