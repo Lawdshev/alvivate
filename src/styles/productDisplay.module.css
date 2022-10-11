@@ -205,6 +205,16 @@
        .discountBtn{
          padding: 1rem 6rem;  
        }
+
+       /* promo page */
+
+       .rulesDiv{
+        width: 60vw;
+       }
+
+       .referralDiv{
+        width: 60vw;
+    }
  } 
 
 @media screen and (max-width:800px) {
@@ -232,18 +242,34 @@
    }
 
    .cartBtn{
-    padding: 1rem 8rem;
+    padding: 0.5rem 6rem;
    }
 
    .discountBtn{
-     padding: 1rem 6rem;  
+     padding: 0.5rem 4rem;  
    }
    .discountDiv{
     margin-top: 2%;
     width: 100%;
     }
+     .rulesDiv{
+        width: 90vw;
+     }
+    .referralDiv{
+        width:90vw;
+    }
     .referralLabel{
         width: 25%;
+        height: 100%;
+    }
+
+    .referral{
+        width: 62% ;
+    }
+
+    .copy{
+        height: 100%;
+        width: 13%;
     }
 }
 

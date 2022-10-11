@@ -18,7 +18,7 @@ const Cart = () => {
             <div className='w-100 flex flex-col items-center md:flex-row justify-around flex-wrap' >
                 {
                     cart.map((item)=>{
-                      return <CartItem {...item}/>
+                      return <CartItem key={item.id} {...item}/>
                          
                     })
                 }

@@ -9,7 +9,7 @@ export default function ProductCard({product_name,image_url,description,price,ra
     
     return (
         <Card className='cardcomp w-90' style={{marginTop:'5px',marginLeft:'5px'}}>
-          <a class={productStyle.single}  onClick={() => {
+          <a className={productStyle.single}  onClick={() => {
         navigate("/product/" + id);
       }}>
                         <div className={productStyle.pica}>
