@@ -65,7 +65,7 @@ export const womenCollection = [
     },
     {
         id : 9,
-        image_url : 'https://i5.walmartimages.com/asr/93b5d36a-6d02-45d7-8f53-28646b79df4c.689e2888ecfe213e144720b6bec6b45c.jpeg',
+        image_url : 'https://i5.walmartimages.com/asr/8ce70768-a74e-469a-aefc-f9fef0225c37.7b631c276d4ae5a8a67e7e7672b1a541.jpeg',
         description : `Longbay Women"s Warm Chenille Knit Bootie Slippers Comfy Suedette Fluffy Faux Fur Memory Foam boots`,
         price : 21,
         product_name: 'Warm-Bootie',
@@ -73,7 +73,7 @@ export const womenCollection = [
     },
     {
         id : 10,
-        image_url : 'https://i5.walmartimages.com/asr/4479a6e0-b907-44b4-95ef-8c18243915bc.a903a1f4f53ec033cc995c51d4aed20d.jpeg',
+        image_url : 'https://i5.walmartimages.com/asr/4903588c-7d84-4f90-8a9b-f5bcbb84f0e4_1.d6cf9e86ad8ba93e61f836835feb5ded.jpeg',
         description : 'Spot ladies new clear crystal heels with open toe PU leather shoes high heels shoes',
         price : 35,
         product_name: 'Heels',
