@@ -14,7 +14,7 @@ function Women() {
         </div> 
         <div className="btns flex items-center justify-around w-80 px-4">
           <Button onClick={() => {
-          navigate("/Women")}}>SHOP MEN WEARS</Button>
+          navigate("/men")}}>SHOP MEN WEARS</Button>
         </div>
       </div>
       <div className="flex justify-between items-center px-4 mt-2">

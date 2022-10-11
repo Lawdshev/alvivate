@@ -34,7 +34,6 @@ function ProductDisplay() {
   <>
     <div><button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button></div>
     <div className={productStyle.prodDisplay} >
-      <button>back</button>
       <div className={productStyle.imgDiv}>
       <img src={product.image_url} alt={product.product_name} className={productStyle.img}/>
       </div>
