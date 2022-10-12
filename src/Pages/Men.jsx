@@ -7,7 +7,7 @@ import { menCollection } from '../utilities/data';
 function Men() {
   const navigate = useNavigate()
   return (<>
-      <div className="text-white flex flex-col items-center justify-around py-14 bg-cover w-screen h-full" style={{backgroundColor:'#120241',minHeight:'40vh',backgroundImage:"url('https://i.pinimg.com/originals/bc/ec/46/bcec46649a0f62eaf77aad7681aced97.jpg')"}}>
+      <div className="text-white flex flex-col items-center justify-around py-14 bg-cover h-full" style={{backgroundColor:'#120241',minHeight:'60vh',backgroundImage:"url('https://i.pinimg.com/originals/bc/ec/46/bcec46649a0f62eaf77aad7681aced97.jpg')"}}>
         <div className="text-purple-900 flex flex-col items-center">
           <h1 className="text-3xl">EVERYTHING MEN</h1>
           <h4 className="text-purple-900 text-lg italic">Hurry! Shop Now And Get A <span className="text-green-500">DISCOUNT.</span> </h4>

@@ -10,7 +10,7 @@ export const CartItem= ({product_name,description,image_url,id,price,color,qty})
   }
 
   return (
-    <Card style={{ width: '18rem',marginTop:'1%',height:'34rem'}}>
+    <Card style={{ width: '18rem',height:'34rem',marginTop:"1%"}}>
       <Card.Img variant="top" src={image_url} />
       <Card.Body>
         <h4 className='font-bold text-lg'>{product_name} </h4>
