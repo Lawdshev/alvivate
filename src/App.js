@@ -12,7 +12,7 @@ import Women from "./Pages/Women";
 import Men from './Pages/Men';
 import Signout from './components/Signout';
 import TopNav from './components/TopNav';
-import ProductDisplay from './Pages/productDisplay';
+import ProductDisplay from './Pages/ProductDisplay';
 import Footer from './components/Footer';
 import Promo from './Pages/Promo';
 import Groups from './Pages/Groups';
