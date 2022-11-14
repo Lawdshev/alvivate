@@ -133,7 +133,7 @@ export const menCollection = [
         image_url : 'https://i5.walmartimages.com/asr/507974fc-66a8-4b3f-a849-213f895300d5_1.536be24e14cafe527e89c6407bee1367.jpeg',
         description : 'Alpine Swiss Kilian Mesh Sneakers Casual Shoes Mens & Womens Lightweight Trainer Well Designed',
         price : 100,
-        rating: 2.5,
+        rating: 3.5,
         product_name: 'Alpine Swiss',
         amount: 1,
     },
