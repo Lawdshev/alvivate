@@ -12,6 +12,7 @@ function ProductDisplay() {
   const product = allProducts.find(c => c.id == id);
   const [select,setSelect] = useState('red')
   const [select2,setSelect2] = useState('1');
+  const [add, setAdd] = useState('Add to cart')
 
 
   const handleSelect = (e) => {
@@ -28,6 +29,10 @@ function ProductDisplay() {
     product.color = select;
     product.qty = select2;
     setCart(prevState=> [...prevState,product])
+    setAdd('Added');
+    setTimeout(() => {
+      setAdd('Add to Cart')
+    }, 2000);
   }
 
   return (
@@ -64,7 +69,7 @@ function ProductDisplay() {
          <hr/>
          <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
          <hr />
-         <button className={productStyle.cartBtn} onClick={addToCart}>Add to cart</button>
+         <button className={productStyle.cartBtn} onClick={addToCart}>{add}</button>
          <hr />
          <button className={productStyle.discountBtn} onClick={()=> navigate(`/Promo/${id}`)}>Enjoy 70% discount</button>
       </div> 
