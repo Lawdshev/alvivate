@@ -15,7 +15,7 @@ export default function ProductCard({product_name,image_url,description,price,ra
        <h4 className='text-sm mt-2 h-20'>{description}</h4>
        <div className='flex mt-8'>
         <h4 className='text-lg text-[#ccc]'>price:</h4>
-        <h4 className='text-lg ml-1'>${price}</h4>
+        <h4 className='text-lg ml-1'>₦{price}</h4>
        </div>
     </div>
     

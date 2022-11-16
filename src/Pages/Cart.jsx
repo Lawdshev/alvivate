@@ -29,7 +29,7 @@ const Cart = () => {
                 }
             </div>}
             <div className="checkout flex w-4/5 md:w-3/5 justify-between mt-3 border-t-2 border-black border-solid">
-              <span className="text-lg font-bold mt-4"> Total:$<span className="border-solid border-2 border-black px-3 py-2 mt-4">
+              <span className="text-lg font-bold mt-4"> Total:₦<span className="border-solid border-2 border-black px-3 py-2 mt-4">
                 {cart.length>0? cart.reduce((total,item) => item.qty * item.price + total, 0) : 0 }
                 </span> </span>
               <Button className="mt-4">Checkout</Button>

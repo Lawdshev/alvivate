@@ -46,7 +46,7 @@ function ProductDisplay() {
       <div className={productStyle.prodDes}>
         <h1 className={productStyle.prodName}>{product.product_name}</h1>
         <hr />
-        <h3 className={productStyle.prodPrice}>Price: ${product.price}</h3>
+        <h3 className={productStyle.prodPrice}>Price: ₦{product.price}</h3>
         <hr />
         <article className={productStyle.article}>
           <p>{product.description}</p>
