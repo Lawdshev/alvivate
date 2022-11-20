@@ -5,7 +5,7 @@ export const womenCollection = [
         description : 'SIMANLAN Women"s Slip On Loafer Canvas Low Top Fashion Sneakers Casual Flat Comfortable',
         product_name: 'Women"s Slip',
         rating: 4.0,
-        price : 35,
+        price : 35000,
         amount: 1,
     },
     {
