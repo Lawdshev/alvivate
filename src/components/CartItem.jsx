@@ -16,7 +16,7 @@ export const CartItem= ({product_name,description,image_url,id,price,color,qty})
          <h4 className='text-sm mt-2'>{description}</h4>
          <div className='flex mt-4'>
           <h4 className='text-lg text-[#ccc]'>price:</h4>
-          <h4 className='text-lg ml-1'>${price}</h4>
+          <h4 className='text-lg ml-1'>₦{price}</h4>
          </div>
          <div className='flex items-center justify-between mt-4'>
             <h1 className='text-sm'>Qty: x{qty}</h1>
