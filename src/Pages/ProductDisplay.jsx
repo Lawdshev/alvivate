@@ -68,7 +68,7 @@ function ProductDisplay() {
           <input type="number" name="select2" id="" min='1' max='10' value={select2} className="w-20 p-2 border-2 border-solid border-black" onChange={handleSelect2} />
          </div>
          <hr/>
-         <h3 className={productStyle.prodPrice}>Total: ${product.price}</h3>
+         <h3 className={productStyle.prodPrice}>Total: ₦{product.price}</h3>
          <hr />
          <button className={productStyle.cartBtn} onClick={addToCart}>{add}</button>
          <hr />
