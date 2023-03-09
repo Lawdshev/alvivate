@@ -116,7 +116,7 @@ function Dashboard() {
                         </div>
                     )}
                     {text === "abandoned" && (
-                        <div className='flex text-[#D8B70E] font-poppins text-[7px] md:text-[10px] xl:text-[12px] font-normal'>
+                        <div className='flex text-[#D8B70E] font-poppins text-[7px] md:text-[10px] xl::text-[12px] font-normal'>
                             {" "}
                             <span>{text}</span>
                         </div>
@@ -222,39 +222,39 @@ function Dashboard() {
                 <div className='flex justify-between items-center bg-white p-[10px] md:p-[16px]  xl:px-[2.2%] xl:py-[0.8vw]'>
                   <div className='w-[70%] flex justify-between'>
                     <div className='flex flex-col '>
-                      <span className='text-[#282828] font-[500] text-[10px] md:text-[1px] xl:text-[1.2vw]'>
+                      <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
                         Password
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl::text-[0.9vw] font-[400]'>
                         adeleksiju!@#
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[10px] md:text-[1px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
                         User Type
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xltext-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
                         Admin
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[10px] md:text-[1px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
                         Date Registered
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xltext-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
                         10/01/2023
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[10px] md:text-[1px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
                         Address
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xltext-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
                         141 Carfin Street, Motherwell ML1 4ET
                       </span>
                     </div>
                   </div>
-                                <button className='underline text-[#005B61] font-[600] text-[10px] md:text-[1px] xl:text-[1.2vw]'>
+                                <button className='underline text-[#005B61] font-[600] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
                     View Profile
                   </button>
                 </div>
