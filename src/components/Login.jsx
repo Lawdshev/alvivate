@@ -8,8 +8,8 @@ import { useState } from 'react';
 import GoogleButton from "react-google-button";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('admin@apple.com');
+  const [password, setPassword] = useState('123456');
   const [error, setError] = useState('');
   const { logIn, googleSignIn } = useUserAuth();
   const navigate = useNavigate();
