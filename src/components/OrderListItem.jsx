@@ -17,18 +17,22 @@ const OrderListItem = ({ merchantName, date, items }) => {
         <List.Item>
           <List.Item.Meta
             title={
-              <div className='flex justify-between items-center'>
-                <div className='flex items-center  w-[60%]'>
+              <div className='flex justify-between w-full items-center'>
+                <div className='flex items-center w-[60%]'>
                   {/* <Avatar style={{ backgroundColor: '#FFE55F' }} icon={<img className='text-black' src={pot} />} /> */}
                   <div className='h-[24px] w-[24px] bg-[#FFF2C2] flex items-center justify-center rounded-[3px]'>
                     <img className='w-[12px]' src={pot} />
                   </div>
-                  <span className='ml-[8%] text-[1vw]'>{merchantName}</span>
+                  <span className='ml-[8%] text-[10px] lg:text-[12px] xl:text-[1vw]'>
+                    {merchantName}
+                  </span>
                 </div>
                 <span className='flex items-center'>
-                  <span className='mr-[0.5vw] text-[0.8vw]'>{date}</span>
+                  <span className='mr-[0.5vw] text-[8px] md:text-[11px] xl:text-[0.8vw]'>
+                    {date}
+                  </span>
                   <button
-                    className=' flex items-center justify-center text-[0.8vw]'
+                    className=' flex items-center justify-center text-[8px] md:text-[11px] xl:text-[0.8vw]'
                     onClick={handleOrderClick}>
                     {!showDetails ? <PlusOutlined /> : <MinusOutlined />}
                   </button>
@@ -42,7 +46,7 @@ const OrderListItem = ({ merchantName, date, items }) => {
             <div>
               {items.map((item) => {
                 return (
-                  <span className='flex text-[0.8vw] mt-[0.3vw] '>
+                  <span className='flex text-[8px] md:text-[11px] xl:text-[0.8vw] mt-[0.3vw] '>
                     <span>{item.qty}x</span>
                     <span className='ml-[8px] '>{item.name}</span>
                   </span>

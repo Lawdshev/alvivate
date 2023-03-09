@@ -116,7 +116,7 @@ function Dashboard() {
                         </div>
                     )}
                     {text === "abandoned" && (
-                        <div className='flex text-[#D8B70E] font-poppins text-[7px] md:text-[10px] xl::text-[12px] font-normal'>
+                        <div className='flex text-[#D8B70E] font-poppins text-[7px] md:text-[10px] lg:text-[12px] xl::text-[12px] font-normal'>
                             {" "}
                             <span>{text}</span>
                         </div>
@@ -220,41 +220,41 @@ function Dashboard() {
                   </div>
                 </div>
                 <div className='flex justify-between items-center bg-white p-[10px] md:p-[16px]  xl:px-[2.2%] xl:py-[0.8vw]'>
-                  <div className='w-[70%] flex justify-between'>
+                  <div className='w-[80%] md:w-[70%] flex justify-between'>
                     <div className='flex flex-col '>
-                      <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
+                      <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] lg:text-[14px] xl:text-[1.2vw]'>
                         Password
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl::text-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] lg:text-[12px] xl::text-[0.9vw] font-[400]'>
                         adeleksiju!@#
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] lg:text-[14px] xl:text-[1.2vw]'>
                         User Type
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] lg:text-[12px] xl:text-[0.9vw] font-[400]'>
                         Admin
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] lg:text-[14px] xl:text-[1.2vw]'>
                         Date Registered
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] lg:text-[12px] xl:text-[0.9vw] font-[400]'>
                         10/01/2023
                       </span>
                     </div>
                     <div className='flex flex-col '>
-                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
+                                        <span className='text-[#282828] font-[500] text-[8px] md:text-[12px] lg:text-[14px] xl:text-[1.2vw]'>
                         Address
                       </span>
-                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] xl:text-[0.9vw] font-[400]'>
+                                        <span className='mt-[0.5vw] text-[#575757] text-[7px] md:text-[10px] lg:text-[12px] xl:text-[0.9vw] font-[400]'>
                         141 Carfin Street, Motherwell ML1 4ET
                       </span>
                     </div>
                   </div>
-                                <button className='underline text-[#005B61] font-[600] text-[8px] md:text-[12px] xl:text-[1.2vw]'>
+                                <button className='underline text-[#005B61] font-[600] text-[8px] md:text-[12px] lg:text-[14px] xl:text-[1.2vw]'>
                     View Profile
                   </button>
                 </div>
@@ -283,7 +283,7 @@ function Dashboard() {
                     <div className='w-[100vw] md:w-full customerdbtablediv mt-[1.5vw]'>
                       <Table
                         columns={columns}
-                        className='w-full'
+                        className='w-[90%] md:w-[100%]'
                         dataSource={
                           searchText === "" ? dataSource : filteredData
                         }
@@ -293,7 +293,7 @@ function Dashboard() {
                     </div>
                   </div>
 
-                  <div className='w-[50%] md:mx-0 mt-[16px] lg:mt-0 lg:w-[23%] bg-[#ffffff] p-[1%]'>
+                  <div className='w-[60%] bg-[#ffffff] md:mx-0 mt-[16px] lg:mt-0 lg:w-[23%] p-[1%]'>
                     <div className='w-full flex items-center justify-between'>
                       <h1 className='text-[10px] md:text-[12px] xl:text-[1.1vw] font-[500] text-[#282828]'>
                         Recent Purchases
