@@ -13,12 +13,12 @@ function Home() {
     <>
     <div>
       <div className="text-white flex flex-col items-center justify-around py-14 bg-cover h-full" style={{backgroundColor:'#120241',minHeight:'60vh',backgroundImage:"url('https://thumbs.dreamstime.com/z/running-shoes-athlete-sport-feet-asphalt-road-straight-white-line-sunset-background-fitness-healthy-150770358.jpg')"}}>
-        <div className="text-purple-900 flex flex-col items-center">
-          <h1 className="text-3xl">WELCOME TO APPLE</h1>
-          <h4 className="text-purple-900 text-lg italic">The home of unbeatable Fashion</h4>
+        <div className="text-[#005B61]  font-[800] flex flex-col items-center">
+            <h1 className="text-[28px] font-[800] ">WELCOME TO APPLE</h1>
+          <h4 className="text-[#005B61] text-lg italic">The home of unbeatable Fashion</h4>
         </div> 
         <div className="btns flex items-center justify-around w-80 px-4">
-          <Button onClick={() => {
+            <Button className='bg-[#005B61]' onClick={() => {
           navigate("/Men")}}>SHOP NOW</Button>
         </div>
       </div>

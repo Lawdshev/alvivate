@@ -16,8 +16,12 @@ import ProductDisplay from './Pages/ProductDisplay';
 import Footer from './components/Footer';
 import Promo from './Pages/Promo';
 import Groups from './Pages/Groups';
+import Admin from "./Pages/Admin";
+
 
 function App() {
+  // console.log(process.env.REACT_APP_PAYSTACK_PUBLIC_KEY);
+  // console.log(process.env.REACT_APP_PAYSTACK_SECRET_KEY);
   return (<>
         <UserAuthContextProvider>
           <TopNav/>
@@ -59,6 +63,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Dashboard/>
+                  </ProtectedRoute>
+                }
+              />
+            <Route
+                path="/admin"
+                element={
+                  <ProtectedRoute>
+                    <Admin/>
                   </ProtectedRoute>
                 }
               />

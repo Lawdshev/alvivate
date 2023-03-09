@@ -1,9 +1,8 @@
 import React from 'react';
 import {CartItem} from "../components/CartItem";
-import Button from "react-bootstrap/esm/Button";
 import { useUserAuth } from '../utilities/UserAuthContextProvider';
 import { useNavigate } from "react-router-dom";
-import Checkout from '../utilities/payment';
+import PaystackPay from '../utilities/paystack'
 
 const Cart = () => {
   const {cart} = useUserAuth();
@@ -11,7 +10,7 @@ const Cart = () => {
   let checkoutAmount =  cart.reduce((total,item) => item.qty * item.price + total, 0) 
   return (
     <> 
-    <div>
+    <div className='mb-[3%]'>
       <button onClick={() => navigate(-1)}><i className="fa fa-chevron-left text-3xl ml-3"></i></button>
         <h6 className='text-center font-bold' style={{color:'#120241'}}>SHOPPING CART</h6>
         <hr />
@@ -34,11 +33,11 @@ const Cart = () => {
               <span className="text-lg font-bold mt-4"> Total:₦<span className="border-solid border-2 border-black px-3 py-2 mt-4">
                 {cart.length>0? checkoutAmount: 0 }
                 </span> </span>
-             { checkoutAmount<0.1?
+             { checkoutAmount < 0.1 ?
               ''
               :
               <button className="mt-3 bg-[#120241] text-white rounded-md px-2">
-                <Checkout amount={checkoutAmount}/>
+                <PaystackPay amount={checkoutAmount*100}/>
               </button>}
             </div>
         </div>
